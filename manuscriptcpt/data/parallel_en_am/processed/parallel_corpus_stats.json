@@ -1,0 +1,102 @@
+{
+  "dataset_name": "Open-Source English-Amharic Parallel Corpus (EthioEnAm-Parallel)",
+  "source_repositories": [
+    "Helsinki-NLP/opus-100 (am-en) (Tiedemann 2012, Zhang et al. 2020)",
+    "KCorpus-Anchored Multi-Domain Reasoning Benchmark"
+  ],
+  "random_seed": 42,
+  "quality_control": {
+    "min_words": 2,
+    "max_characters": 1000,
+    "min_ratio": 0.2,
+    "max_ratio": 4.5,
+    "min_ethiopic_script_ratio": 0.35,
+    "homophone_normalization": true,
+    "exact_deduplication": true
+  },
+  "raw_pairs_gathered": 23320,
+  "filtered_or_duplicate_pairs": 3934,
+  "clean_pairs_retained": 19386,
+  "splits": {
+    "train_full": {
+      "sentence_pairs": 15510,
+      "en_tokens_total": 555680,
+      "am_tokens_total": 420277,
+      "en_avg_tokens_per_sent": 35.83,
+      "am_avg_tokens_per_sent": 27.1,
+      "en_avg_chars_per_sent": 194.65,
+      "am_avg_chars_per_sent": 127.47,
+      "en_vocab_size": 44371,
+      "am_vocab_size": 70911
+    },
+    "valid": {
+      "sentence_pairs": 1938,
+      "en_tokens_total": 69159,
+      "am_tokens_total": 52659,
+      "en_avg_tokens_per_sent": 35.69,
+      "am_avg_tokens_per_sent": 27.17,
+      "en_avg_chars_per_sent": 193.52,
+      "am_avg_chars_per_sent": 127.56,
+      "en_vocab_size": 12036,
+      "am_vocab_size": 16935
+    },
+    "test": {
+      "sentence_pairs": 1938,
+      "en_tokens_total": 70085,
+      "am_tokens_total": 53166,
+      "en_avg_tokens_per_sent": 36.16,
+      "am_avg_tokens_per_sent": 27.43,
+      "en_avg_chars_per_sent": 196.51,
+      "am_avg_chars_per_sent": 129.17,
+      "en_vocab_size": 12177,
+      "am_vocab_size": 17103
+    },
+    "shard_D1": {
+      "sentence_pairs": 5170,
+      "en_tokens_total": 184184,
+      "am_tokens_total": 139112,
+      "en_avg_tokens_per_sent": 35.63,
+      "am_avg_tokens_per_sent": 26.91,
+      "en_avg_chars_per_sent": 193.47,
+      "am_avg_chars_per_sent": 126.48,
+      "en_vocab_size": 23054,
+      "am_vocab_size": 34199
+    },
+    "shard_D2": {
+      "sentence_pairs": 5170,
+      "en_tokens_total": 185922,
+      "am_tokens_total": 141046,
+      "en_avg_tokens_per_sent": 35.96,
+      "am_avg_tokens_per_sent": 27.28,
+      "en_avg_chars_per_sent": 195.16,
+      "am_avg_chars_per_sent": 128.2,
+      "en_vocab_size": 22968,
+      "am_vocab_size": 34087
+    },
+    "shard_D3": {
+      "sentence_pairs": 5170,
+      "en_tokens_total": 185574,
+      "am_tokens_total": 140119,
+      "en_avg_tokens_per_sent": 35.89,
+      "am_avg_tokens_per_sent": 27.1,
+      "en_avg_chars_per_sent": 195.34,
+      "am_avg_chars_per_sent": 127.73,
+      "en_vocab_size": 22937,
+      "am_vocab_size": 33938
+    }
+  },
+  "domain_distribution": {
+    "math": 4168,
+    "conversation": 2143,
+    "general_technical_localization": 6402,
+    "logic": 3732,
+    "ethics": 2941
+  },
+  "source_distribution": {
+    "KCorpus-Anchored (math)": 4168,
+    "KCorpus-Anchored (conversation)": 2143,
+    "OPUS-100 (Helsinki-NLP/opus-100 am-en)": 6402,
+    "KCorpus-Anchored (logic)": 3732,
+    "KCorpus-Anchored (ethics)": 2941
+  }
+}

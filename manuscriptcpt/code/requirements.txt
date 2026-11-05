@@ -1,0 +1,25 @@
+# Core scientific computing
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+
+# Deep learning
+torch>=2.0
+transformers>=4.40
+peft>=0.10
+
+# NLP and evaluation
+datasets>=2.17
+evaluate>=0.4
+seqeval>=1.2
+sacrebleu>=2.3
+nltk>=3.8
+
+# Visualization
+matplotlib>=3.8
+seaborn>=0.13
+
+# Utilities
+tqdm>=4.66
+jsonlines>=4.0
+scikit-learn>=1.3
