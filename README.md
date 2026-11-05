@@ -9,9 +9,6 @@
 This repository contains the full experimental code, datasets, and manuscript artifacts for the paper:
 
 > **Amharic-Centric Large Language Models: Data-Efficient Continual Pre-training and Incremental Adaptation for Low-Resource Natural Language Processing**  
-> Kindie Alebachew Tsega, Durga Prasad Sharma, Mesay Samuel Gondere, and Mohammed Abebe Yimer  
-> Faculty of Computing and Software Engineering, Arba Minch Institute of Technology, Arba Minch University, Arba Minch, Ethiopia  
-> *Under review* (2026)
 
 We investigate data-efficient continual pre-training and incremental adaptation of Amharic language models by comparing:
 - **DoRA** (Weight-Decomposed Low-Rank Adaptation)
