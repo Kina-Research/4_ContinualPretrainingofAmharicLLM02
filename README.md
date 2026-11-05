@@ -23,42 +23,6 @@ on `roberta-base-amharic` for sequential Named Entity Recognition (NER) across t
 
 ---
 
-## Repository Structure
-
-```
-ContinualIncrementalLearning/
-├── manuscriptcpt/
-│   ├── revised_manuscript.tex        # Main LaTeX manuscript
-│   ├── figures/                      # All 6 publication figures (PDF + PNG)
-│   │   ├── fig1_cl_dynamics.*        # CL backward/forward transfer bar chart
-│   │   ├── fig2_f1_retention_curves.*# Macro-F1 retention across stages
-│   │   ├── fig3_pareto_efficiency.*  # GPU memory vs. F1 Pareto frontier
-│   │   ├── fig4_entity_f1.*         # Entity-level F1 breakdown
-│   │   ├── fig5_crosslingual_dynamics.* # Cross-lingual BLEU/ChrF++ dynamics
-│   │   └── fig6_retention_heatmap.* # Task retention matrix heatmap
-│   ├── code/                         # All experiment scripts
-│   │   ├── train.py                  # Main training script (DoRA/LoRA/EWC/Full-FT)
-│   │   ├── evaluate_ner.py           # NER evaluation with CL metrics
-│   │   ├── preprocess.py             # Data preprocessing pipeline
-│   │   ├── generate_publication_figures.py  # Reproduce all 6 figures
-│   │   ├── process_parallel_data.py  # EthioEnAm-Parallel corpus builder
-│   │   ├── generate_synthetic_parallel.py   # Synthetic bitext generator
-│   │   ├── analysis_from_summary.py  # Statistical re-analysis
-│   │   ├── complementary_experiments.py     # E1-E8 experiments
-│   │   └── requirements.txt          # Python dependencies
-│   └── data/
-│       ├── parallel_en_am/           # EthioEnAm-Parallel corpus
-│       │   ├── processed/            # Train/valid/test splits + CL shards
-│       │   ├── raw/                  # Raw parallel pairs before filtering
-│       │   └── README.md             # Corpus documentation
-│       └── NER/                      # Amharic NER dataset placeholder & guide
-├── README.md                         # This file
-├── LICENSE                           # MIT License
-└── CITATION.cff                      # Citation metadata
-```
-
----
-
 ## Datasets
 
 ### 1. EthioEnAm-Parallel (English–Amharic Parallel Corpus)
@@ -198,44 +162,9 @@ latexmk -pdf revised_manuscript.tex
 | **DoRA ($r=8$)** | **26.82** | **51.40** | **39.65** | **+0.84** | **+0.95** | **2.410** |
 | DoRA + Synth-Aug | 25.94 | 50.30 | 38.52 | +0.92 | +1.12 | 2.428 |
 
----
 
-## Citation
 
-If you use this repository, data, or code, please cite:
 
-```bibtex
-@article{tsega2026amharic,
-  title     = {Amharic-Centric Large Language Models: Data-Efficient Continual 
-               Pre-training and Incremental Adaptation for Low-Resource 
-               Natural Language Processing},
-  author    = {Tsega, Kindie Alebachew and Sharma, Durga Prasad and 
-               Gondere, Mesay Samuel and Yimer, Mohammed Abebe},
-  journal   = {Under Review},
-  year      = {2026},
-  note      = {Code and data available at: 
-               https://github.com/Kina-Research/ContinualPretrainingofAmharicLLM02}
-}
-```
-
----
-
-## License
-
-- **Code**: [MIT License](LICENSE)
-- **EthioEnAm-Parallel Corpus**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
-- **Amharic NER Dataset**: Subject to original authors' licensing terms (Yohannes & Amagasa, 2022)
-
----
-
-## Contact
-
-**Corresponding Author:**  
-Kindie Alebachew Tsega  
-Faculty of Computing and Software Engineering, Arba Minch Institute of Technology,  
-Arba Minch University, Arba Minch, Ethiopia  
-Email: [besukind@gmail.com](mailto:besukind@gmail.com)  
-ORCID: [0009-0005-2613-3914](https://orcid.org/0009-0005-2613-3914)
 
 ---
 
